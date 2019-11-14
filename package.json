@@ -3,23 +3,49 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@loadable/component": "^5.10.3",
+    "react": "^16.11.0",
+    "react-dom": "npm:@hot-loader/react-dom",
+    "react-hot-loader": "^4.12.17",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
     "@types/jest": "24.0.23",
+    "@types/loadable__component": "^5.10.0",
     "@types/node": "12.12.7",
     "@types/react": "16.9.11",
     "@types/react-dom": "16.9.4",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "@types/react-router-dom": "^5.1.2",
+    "@types/styled-jsx": "^2.2.8",
+    "autoprefixer": "^9.7.1",
+    "customize-cra": "^0.8.0",
+    "eslint-config-prettier": "^6.5.0",
+    "husky": "^3.0.9",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "lint-staged": "^10.0.0-1",
+    "postcss-aspect-ratio-mini": "^1.0.1",
+    "postcss-px-to-viewport": "^1.1.1",
+    "prettier": "^1.19.1",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "react-app-rewired": "^2.1.5",
     "react-scripts": "3.2.0",
-    "typescript": "3.7.2"
+    "styled-jsx": "^3.2.4",
+    "styled-jsx-plugin-postcss": "^2.0.1",
+    "typescript": "3.7.2",
+    "typescript-plugin-css-modules": "^2.0.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "browserslist": {
     "production": [
