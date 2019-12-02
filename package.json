@@ -34,7 +34,7 @@
     "styled-jsx": "^3.2.4",
     "styled-jsx-plugin-postcss": "^2.0.1",
     "typescript": "3.7.2",
-    "typescript-plugin-css-modules": "^2.1.0"
+    "typescript-plugin-css-modules": "^2.1.1"
   },
   "scripts": {
     "start": "react-app-rewired start",
